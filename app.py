@@ -206,6 +206,8 @@ with gr.Blocks(title="Gradience — ML Optimizer Visualization") as demo:
 
 if __name__ == "__main__":
     demo.launch(
+        server_name="0.0.0.0",
+        server_port=7860,
         theme=gr.themes.Base(
             primary_hue="violet",
             neutral_hue="slate",
