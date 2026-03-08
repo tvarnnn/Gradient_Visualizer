@@ -1,3 +1,13 @@
+---
+title: Gradience
+colorFrom: purple
+colorTo: blue
+sdk: gradio
+python_version: "3.10"
+app_file: app.py
+pinned: false
+---
+
 # Gradience
 
 **Gradience** is an interactive machine learning optimization visualizer built with **Python, Gradio, NumPy, and Plotly**. It lets users explore how gradient-based optimizers move across 2D loss landscapes in real time.
