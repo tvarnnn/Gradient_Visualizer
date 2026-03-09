@@ -143,7 +143,7 @@ _LANDING = """<!DOCTYPE html>
   <div class="grid">
 
     <a href="/gradient" class="card">
-      <div class="icon">📉</div>
+      <div class="icon"></div>
       <div class="title">Loss Landscape</div>
       <div class="desc">Watch SGD, Adam, RMSProp and others navigate 3D loss
       surfaces. Rotate, zoom, scrub, and compare optimizer paths side by side.</div>
@@ -151,7 +151,7 @@ _LANDING = """<!DOCTYPE html>
     </a>
 
     <a href="/decision" class="card">
-      <div class="icon">🗺️</div>
+      <div class="icon">️</div>
       <div class="title">Decision Boundaries</div>
       <div class="desc">See how KNN, SVM, Decision Trees, and Random Forests
       carve up 2D feature space on moons, circles, XOR, and blob datasets.</div>
@@ -159,7 +159,7 @@ _LANDING = """<!DOCTYPE html>
     </a>
 
     <a href="/overfitting" class="card">
-      <div class="icon">📈</div>
+      <div class="icon"></div>
       <div class="title">Overfitting vs Generalization</div>
       <div class="desc">Fit polynomials of increasing degree to noisy data.
       Watch training error drop while test error rises — and see regularization fix it.</div>
@@ -167,7 +167,7 @@ _LANDING = """<!DOCTYPE html>
     </a>
 
     <a href="/clustering" class="card">
-      <div class="icon">🫧</div>
+      <div class="icon"></div>
       <div class="title">Clustering</div>
       <div class="desc">Compare K-Means, DBSCAN, Gaussian Mixture, and
       Agglomerative clustering on moons, circles, blobs, and anisotropic distributions.</div>
@@ -183,7 +183,7 @@ _LANDING = """<!DOCTYPE html>
     </a>
 
     <a href="/nn-trainer" class="card">
-      <div class="icon">🧠</div>
+      <div class="icon"></div>
       <div class="title">Neural Network Trainer</div>
       <div class="desc">Train a live MLP with numpy backprop and watch the
       decision boundary evolve epoch by epoch alongside the training loss curve.</div>
@@ -191,7 +191,7 @@ _LANDING = """<!DOCTYPE html>
     </a>
 
     <a href="/rl" class="card">
-      <div class="icon">🎮</div>
+      <div class="icon"></div>
       <div class="title">RL: Value Iteration</div>
       <div class="desc">Watch value iteration converge on a grid world, with
       live value function heatmap and greedy policy arrows updating each sweep.</div>

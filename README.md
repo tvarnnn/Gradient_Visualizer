@@ -1,74 +1,113 @@
 ---
-title: Gradience
+title: ML Visualizer
 colorFrom: purple
 colorTo: blue
-sdk: gradio
-python_version: "3.10"
-app_file: app.py
+sdk: docker
+app_port: 7860
 pinned: false
+license: mit
 ---
 
-# Gradience
+# ML Visualizer
 
-**Gradience** is an interactive machine learning optimization visualizer built with **Python, Gradio, NumPy, and Plotly**. It lets users explore how gradient-based optimizers move across 2D loss landscapes in real time.
+**ML Visualizer** is an interactive machine learning playground built with **FastAPI + Gradio + NumPy + Plotly**.  
+It allows users to explore core machine learning concepts through real-time visualizations and simulations.
 
-The app renders a **3D loss surface**, a **top-down contour view**, and a **loss-vs-step chart**, then animates optimizer trajectories step-by-step so you can compare convergence behavior visually.
-
-This project was built as an educational and exploratory tool for understanding **optimization dynamics in machine learning**.
-
----
-
-## Features
-
-- Interactive visualization of **loss landscapes** in 3D
-- Animated optimizer trajectories across the surface
-- Side-by-side comparison of multiple optimizers
-- Top-down **contour view** for clearer path tracking
-- **Loss vs. step** chart for convergence analysis
-- Adjustable:
-  - learning rate
-  - starting point
-  - number of steps
-  - playback speed
-- Support for **custom user-defined surfaces**
-- Client-side playback controls:
-  - play
-  - pause
-  - stop
-  - scrub slider
-- Camera position is preserved during animation updates
+The app provides multiple interactive modules that demonstrate how different algorithms behave during training.
 
 ---
 
-## Implemented Optimizers
+# Modules
 
-- **SGD**
-- **Momentum**
-- **AdaGrad**
-- **RMSProp**
-- **Adam**
+## Loss Landscape
+Visualize how optimization algorithms move across 2D loss surfaces.
 
-Each optimizer is implemented manually in **pure NumPy**.
+Features:
+- 3D loss surface visualization
+- Top-down contour view
+- Optimizer path animation
+- Adjustable learning rate and step count
+- Play / pause / scrub training
 
----
-
-## Implemented Loss Surfaces
-
-- **Bowl (Convex)**
-- **Rosenbrock (Banana)**
-- **Himmelblau**
-- **Saddle Point**
-- **Beale**
-- **Custom function input**
-
-Preset surfaces use analytical gradients.  
-Custom surfaces use **numerical gradients via central finite differences**.
+Optimizers included:
+- SGD
+- Momentum
+- AdaGrad
+- RMSProp
+- Adam
 
 ---
 
-## How It Works
+## Decision Boundaries
+See how different classifiers partition feature space.
 
-The program simplifies optimization to a 2-parameter setting, where the loss function is:
+Algorithms:
+- KNN
+- SVM
+- Decision Trees
+- Random Forest
 
-```math
-z = f(x, y)
+Datasets:
+- Moons
+- Circles
+- XOR
+- Gaussian blobs
+
+---
+
+## Overfitting vs Generalization
+Explore how model complexity affects training and test error.
+
+Features:
+- Polynomial regression
+- Noise control
+- Train vs test loss comparison
+- Demonstrates overfitting visually
+
+---
+
+## Clustering
+Compare clustering algorithms on synthetic datasets.
+
+Algorithms:
+- K-Means
+- DBSCAN
+- Gaussian Mixture
+- Agglomerative Clustering
+
+---
+
+## Momentum Dynamics
+Visualize how momentum and adaptive optimizers affect convergence speed and trajectory.
+
+---
+
+## Neural Network Trainer
+Train a small neural network and watch the decision boundary evolve in real time.
+
+Features:
+- Numpy MLP implementation
+- Live loss curve
+- Adjustable hidden units and learning rate
+
+---
+
+## Reinforcement Learning
+Visualize value iteration on a grid world.
+
+Shows:
+- Value function convergence
+- Policy improvement
+- Greedy action updates
+
+---
+
+# Tech Stack
+
+- **FastAPI**
+- **Gradio**
+- **NumPy**
+- **Plotly**
+- **Scikit-Learn**
+
+---

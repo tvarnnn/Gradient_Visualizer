@@ -43,17 +43,17 @@ def run_visualization(
     then the final interactive HTML.
     """
     if not selected_optimizers:
-        yield "<p style='color:#f87171;font-family:monospace'>⚠️ Please select at least one optimizer.</p>", ""
+        yield "<p style='color:#f87171;font-family:monospace'> Please select at least one optimizer.</p>", ""
         return
 
     try:
         # Show a loading message while Python works
-        yield "<p style='color:#a78bfa;font-family:monospace;padding:12px'>⏳ Computing paths…</p>", "⏳ Computing…"
+        yield "<p style='color:#a78bfa;font-family:monospace;padding:12px'> Computing paths…</p>", " Computing…"
 
         # Resolve surface
         if surface_name == "Custom":
             if not custom_expr.strip():
-                yield "<p style='color:#f87171;font-family:monospace'>⚠️ Please enter a custom function expression.</p>", ""
+                yield "<p style='color:#f87171;font-family:monospace'>️ Please enter a custom function expression.</p>", ""
                 return
             surface = make_custom_surface(custom_expr.strip())
         else:
@@ -158,7 +158,7 @@ with gr.Blocks(title="Gradience — ML Optimizer Visualization") as demo:
             )
 
     # ---- Reference tables ----
-    with gr.Accordion("📚 Optimizer Reference", open=False):
+    with gr.Accordion("Optimizer Reference", open=False):
         gr.Markdown(
             """
 | Optimizer | Key Idea | Best For |
